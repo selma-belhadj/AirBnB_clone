@@ -21,3 +21,4 @@ tmp
 file.json
 tsts
 */*/*/__pycache__/*
+.hintrc
