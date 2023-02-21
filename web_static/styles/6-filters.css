@@ -1,0 +1,79 @@
+/* search bar */
+.filters {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+section.filters button {
+    font-size: 18px;
+    background-color: #FF5A5F;
+    height: 48px;
+    width: 20%;
+    border: 0;
+    border-radius: 4px;
+    opacity: 1;
+    margin-right: 30px;
+    color: white;
+    margin: 11px 30px;
+    float: right;
+}
+
+section.filters button:hover {
+    opacity: 0.9;
+}
+
+/* location and amenities part of search bar */
+.locations,
+.amenities {
+    height: 100%;
+    width: 25%;
+    float: left;
+}
+
+.locations {
+    border-right: 1px solid #DDDDDD;
+}
+
+.locations h3,
+.amenities h3 {
+    font-weight: 600;
+    margin: 20px 0px 0px 30px;
+    text-align: left;
+}
+
+.locations h4,
+.amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0px 0px 0px 30px;
+    text-align: left;
+}
+
+/* display location and amenities options upon hover */
+.popover {
+    display: none;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.popover h2 {
+    font-size: 16px;
+}
+
+li {
+    list-style-type: none;
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block;
+}
